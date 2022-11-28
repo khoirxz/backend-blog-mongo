@@ -1,0 +1,17 @@
+// get All Post 
+GET http://localhost:5000/api/posts
+
+###
+POST http://localhost:5000/api/post
+Content-Type: application/json
+
+{
+  "title": "Post pertama",
+  "description": "Deskripsi post pertama",
+  "author": "Admin",
+  "slug": "post-pertama"
+}
+
+###
+// get single post http://localhost:5000/api/post/{slug}
+GET http://localhost:5000/api/post/post-pertama
